@@ -1,6 +1,6 @@
-call plug#begin('plugged')
+call plug#begin('~/.config/nvim/plugged')
 
-Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-characterize'
 Plug 'tpope/vim-commentary'
@@ -49,9 +49,12 @@ set expandtab
 set autoindent
 filetype plugin indent on
 
-set number
+set number relativenumber
 
 set termguicolors
 
 syntax enable
-colorscheme dracula
+
+let g:gruvbox_italic=1
+set background=dark
+colorscheme gruvbox
